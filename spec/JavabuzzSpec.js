@@ -1,59 +1,58 @@
-describe('Javabuzz', function() {
-
-	var javabuzz;
+describe('fizzbuzz', function() {
 
 	beforeEach(function() {
-		javabuzz = new Javabuzz();
+			fizzbuzz = new Fizzbuzz()
 	});
 
-	describe('knows when a number is', function() {
+	describe('Number should be divisible by', function() {
 
-		it('divisible by 3', function() {
-			expect(javabuzz.isDivisibleByThree(3)).toEqual(true);
+		it('Three', function() {
+			expect(fizzbuzz.isDivisibleByThree(3)).toEqual(true)
 		});
 
-		it('divisible by 5', function() {
-
-			expect(javabuzz.isDivisibleByFive(5)).toEqual(true);
+		it('Five', function() {
+			expect(fizzbuzz.isDivisibleByFive(5)).toEqual(true)
 		});
 
-		it('divisible by 15', function() {
-			expect(javabuzz.isDivisibleByFifteen(15)).toEqual(true);
-		});
-
-	});
-
-	describe('knows when a number is NOT',function() {
-
-		it('divisible by 3', function() {
-			expect(javabuzz.isDivisibleByThree(1)).toEqual(false);
-		});
-
-		it('divisible by 5', function() {
-			expect(javabuzz.isDivisibleByFive(1)).toEqual(false);
-		});
-
-		it('divisible by 15', function() {
-			expect(javabuzz.isDivisibleByFifteen(1)).toEqual(false);
+		it('Fifteen', function() {
+			expect(fizzbuzz.isDivisibleByFifteen(15)).toEqual(true)
 		});
 
 	});
 
-	describe('when playing, says', function() {
-		
+	describe('Number should NOT be divisible by', function() {
 
-		it('"Java" when a number is divisible by 3', function() {
-		  expect(javabuzz.says(3)).toEqual("Java");
-		});
-				
-		it('"Buzz" when a number is divisible by 5', function() {
-		  expect(javabuzz.says(5)).toEqual("Buzz");
+		it('Three', function() {
+			expect(fizzbuzz.isDivisibleByThree(1)).toEqual(false)
 		});
 
-		it('"JavaBuzz" when a number is divisible by 15', function() {
-		  expect(javabuzz.says(15)).toEqual("Javabuzz");
+		it('Five', function() {
+			expect(fizzbuzz.isDivisibleByFive(1)).toEqual(false)
 		});
 
+		it('Fifteen', function() {
+			expect(fizzbuzz.isDivisibleByFifteen(1)).toEqual(false)
+		});
+
+	});
+
+	describe('Knows when to say', function() {
+
+		it('"Fizz" if a number is divisible by three', function() {
+			expect(fizzbuzz.says(3)).toEqual("Fizz")
+		});
+
+		it('"Buzz" if a number is divisible by five', function() {
+			expect(fizzbuzz.says(5)).toEqual("Buzz")
+		});
+
+		it('"Fizzbuzz" if a number is divisible by fifteen', function() {
+			expect(fizzbuzz.says(15)).toEqual("Fizzbuzz");
+		});
+
+		it('Knows when a number is not divisible by Three or Five', function() {
+			expect(fizzbuzz.says(1)).toEqual(1);
+		});
 	});
 
 });
