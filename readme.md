@@ -40,5 +40,6 @@ Open console in Browser to play:
 Fizzbuzz in Other Languages
 ---------------------------
 
-[Fizzbuzz Ruby](https://github.com/Scully87/FizzBuzz)
-[Fizzbuzz IO](https://github.com/Scully87/fizzbuzz_io)
+- [Fizzbuzz Ruby](https://github.com/Scully87/FizzBuzz)
+- [Fizzbuzz IO](https://github.com/Scully87/fizzbuzz_io)
+- [Fizzbuzz Javascript](https://github.com/Scully87/javabuzz)
