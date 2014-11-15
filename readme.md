@@ -36,3 +36,9 @@ Open console in Browser to play:
 ```shell
  command + alt + I
 ```
+
+Fizzbuzz in Other Languages
+---------------------------
+
+[Fizzbuzz Ruby](https://github.com/Scully87/FizzBuzz)
+[Fizzbuzz IO](https://github.com/Scully87/fizzbuzz_io)
